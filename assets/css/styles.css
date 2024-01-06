@@ -289,21 +289,21 @@ body.dark-theme{
   background-color: var(--text-color-light);
 }
 /*=============== FILTERS TABS ===============*/
-.filters__content{
+.filters__content {
   margin: 2rem 0 2.5rem;
   background-color: var(--text-color-lighten);
   padding: .375rem;
   border-radius: .75rem;
   display: flex;
   justify-content: space-between;
-  column-gap: .5rem; 
+  column-gap: .5rem;
 }
 
-.filters__button{
-  width: 100%;
+.filters__button {
+  flex-grow: 1; /* Allow buttons to take equal width */
   border: none;
   outline: none;
-  padding: 1rem;
+  padding: 1rem 0.65rem; /* Adjusted padding */
   color: var(--title-color);
   font-size: var(--small-font-size);
   font-family: var(--body-font);
@@ -314,10 +314,9 @@ body.dark-theme{
   transition: .3s;
 }
 
-.filters__button:hover{
+.filters__button:hover {
   background-color: var(--body-color);
 }
-
 
 /*=============== PROJECTS ===============*/
 .projects__card{
